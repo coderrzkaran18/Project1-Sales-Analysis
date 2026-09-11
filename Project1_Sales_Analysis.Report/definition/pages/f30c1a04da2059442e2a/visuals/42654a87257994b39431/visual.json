@@ -1,0 +1,233 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "42654a87257994b39431",
+  "position": {
+    "x": 45.625019073486328,
+    "y": 175.31249523162842,
+    "z": 0,
+    "height": 534.375,
+    "width": 1209.375,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "CustomerID"
+                }
+              },
+              "queryRef": "Fact Table.CustomerID",
+              "nativeQueryRef": "CustomerID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Order ID"
+                }
+              },
+              "queryRef": "Fact Table.Order ID",
+              "nativeQueryRef": "Order ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Product ID"
+                }
+              },
+              "queryRef": "Fact Table.Product ID",
+              "nativeQueryRef": "Product ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "PromotionID"
+                }
+              },
+              "queryRef": "Fact Table.PromotionID",
+              "nativeQueryRef": "PromotionID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Date (dd/mm/yyyy)"
+                }
+              },
+              "queryRef": "Fact Table.Date (dd/mm/yyyy)",
+              "nativeQueryRef": "Date (dd/mm/yyyy)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Discount"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Discount)",
+              "nativeQueryRef": "Discount",
+              "displayName": "Total Discount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Discount Percentage"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Discount Percentage)",
+              "nativeQueryRef": "Discount Percentage"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Net Sales"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Net Sales)",
+              "nativeQueryRef": "Net Sales"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Price Per Unit (INR)"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Price Per Unit (INR))",
+              "nativeQueryRef": "Price Per Unit (INR)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Profit"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Profit)",
+              "nativeQueryRef": "Profit"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Total Sales  "
+                }
+              },
+              "queryRef": "Fact Table.Total Sales  ",
+              "nativeQueryRef": "Total Sales  "
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact Table"
+                    }
+                  },
+                  "Property": "Units Sold"
+                }
+              },
+              "queryRef": "Sum(Fact Table.Units Sold)",
+              "nativeQueryRef": "Units Sold"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'FlashyRows'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

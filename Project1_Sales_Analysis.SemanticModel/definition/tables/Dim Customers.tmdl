@@ -1,0 +1,78 @@
+table 'Dim Customers'
+	lineageTag: 5f991394-0ce9-4b94-afcc-bb5c61d997eb
+
+	column 'Customer ID'
+		dataType: string
+		lineageTag: 7bc40202-b419-4b5e-9aa5-39d2e76a294d
+		summarizeBy: none
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Name'
+		dataType: string
+		lineageTag: 17cc3b38-7961-4d45-94e0-c3a41c226374
+		summarizeBy: none
+		sourceColumn: Customer Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: afe88379-edbd-4501-912f-11594f923846
+		dataCategory: City
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: 25d3b101-b164-4b50-9ca4-505f48db19bb
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pincode
+		dataType: int64
+		formatString: 0
+		lineageTag: 97bc8757-fa1e-48cb-b5ca-62ae497e0717
+		summarizeBy: none
+		sourceColumn: Pincode
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmailID
+		dataType: string
+		lineageTag: 02203b99-4109-47a2-8ce1-b8c09306379b
+		summarizeBy: none
+		sourceColumn: EmailID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Phone Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: 60a13e6b-18cd-44bf-8f51-01ae6e2d6334
+		summarizeBy: none
+		sourceColumn: Phone Number
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Dim Customers' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\krnch\Downloads\PoweBI_Project 1\Store+Data.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Dim Customers", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"Customer ID", Int64.Type}, {"Customer Name", type text}, {"City", type text}, {"State", type text}, {"Pincode", Int64.Type}, {"EmailID", type text}, {"Phone Number", Int64.Type}}, "en-US"),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Changed column type",{{"Customer ID", type text}})
+				in
+				  #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
