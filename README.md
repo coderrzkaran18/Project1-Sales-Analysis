@@ -248,7 +248,7 @@ Interactive filters and transaction-level tables allow users to move from high-l
 
 ## Overview
 
-![Sales Analysis Dashboard - Overview]([screenshots/overview.png](https://github.com/coderrzkaran18/Project1-Sales-Analysis/blob/main/images/overview.png))
+![Sales Analysis Dashboard - Overview]([screenshots/overview.png](images/overview.png))
 
 The Overview page provides KPIs, city-wise sales, promotion discount analysis, profit vs net sales, and sales trends.
 
