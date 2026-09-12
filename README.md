@@ -264,7 +264,7 @@ This page compares the Top 5 and Bottom 5 products based on Sales, Quantity Sold
 
 ## Sales / Profit / Quantity Comparison
 
-![Sales Profit Quantity Comparison](screenshots/sales-profit-quantity-comparison.png)
+![Sales Profit Quantity Comparison](images/sales-profit-quantity-comparison.png)
 
 This page enables comparison of Sales, Profit, and Quantity Sold between two selected periods.
 
