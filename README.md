@@ -272,7 +272,7 @@ This page enables comparison of Sales, Profit, and Quantity Sold between two sel
 
 ## Interactive Filters
 
-![Interactive Filters](screenshots/edit-interactions.png)
+![Interactive Filters](images/edit-interactions.png)
 
 Interactive date filters and report interactions allow users to compare and analyze different periods.
 
@@ -280,7 +280,7 @@ Interactive date filters and report interactions allow users to compare and anal
 
 ## Table Visuals
 
-![Table Visuals](screenshots/table-visuals.png)
+![Table Visuals](images/table-visuals.png)
 
 The table view provides detailed order-level information with filters for Product, Customer, Promotion, and Date.
 
@@ -292,3 +292,4 @@ The table view provides detailed order-level information with filters for Produc
 
 ```bash
 git clone https://github.com/coderrz/Project1-Sales-Analysis.git
+
