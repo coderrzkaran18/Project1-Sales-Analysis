@@ -256,7 +256,7 @@ The Overview page provides KPIs, city-wise sales, promotion discount analysis, p
 
 ## Top / Bottom 5 Analysis
 
-![Top Bottom 5 Product Analysis](screenshots/top-bottom-5-analysis.png)
+![Top Bottom 5 Product Analysis](images/top-bottom-5-analysis.png)
 
 This page compares the Top 5 and Bottom 5 products based on Sales, Quantity Sold, and Profit.
 
